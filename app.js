@@ -15,7 +15,13 @@ function stateChange(newState) {
             loadingAnimation.pause();
             $('#animation-container').fadeOut('slow', function() {
                 $('.logo-container').fadeIn();
+
+
+                $('.main-content').fadeIn();
             });
+
+            //            $('.main-content').css('display', 'block');
+
 
         }
     }, 10000);

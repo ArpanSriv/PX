@@ -19,6 +19,7 @@ body {
 
 .header {
     width: 100vw;
+    height: 90vw;
     text-align: center;
 }
 
@@ -262,7 +263,17 @@ object {
 }
 
 .main-content {
+    padding: 80px;
     height: 80%;
     width: 100%;
-    background: red;
+    display: none;
+    position: relative;
+}
+
+#main-carousel {
+    height: 100%;
+}
+
+#main-carousel > a {
+    background: none;
 }
