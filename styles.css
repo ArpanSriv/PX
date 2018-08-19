@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Saira+Condensed');
+
 body {
     margin: 0px;
+    color: white;
+    font: 1em/1.4 "lato";
 }
 
 .ninety {
@@ -15,6 +19,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100vw;
     height: 90vh;
+    transition: background 2s ease;
 }
 
 .header {
@@ -224,10 +229,7 @@ main .content {
     width: 1px;
 }
 
-body {
-    color: white;
-    font: 1em/1.4 "lato";
-}
+
 
 /*--------------------------------------------------------------------------*/
 /*GROW SHADOW CUSTOM*/
@@ -246,11 +248,8 @@ nav a:hover, nav a:focus, nav a:active {
     width: 100px;
 }
 
-object {
-
-}
-
 #main-logo {
+    animation: 1s ease 0s 1 goUpABit;
     height: 100px;
     width: 100px;
 }
@@ -270,10 +269,105 @@ object {
     position: relative;
 }
 
-#main-carousel {
+#mainSlider {
     height: 100%;
+    position: relative;
 }
 
-#main-carousel > a {
-    background: none;
+.about-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+
+#page1-about {
+    height: 100%;
+    position: relative;
+/*    padding: 80px;*/
+    display: flex;
+}
+
+#profile-image-container {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+    padding: 100px;
+}
+
+#page1-about div {
+    flex-basis: 100%;
+}
+
+#profile-photo {
+    height: 260px;
+    width: 260px;
+    border-radius: 100%;
+
+}
+
+
+
+figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 260px;
+}
+
+@keyframes goUpABit {
+    0% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.profile-photo-wrapper {
+    animation: 1s ease 0s 1 goUpABit;
+    margin-top: 100px;
+    margin-left: 400px;
+    transition: transform 0.5s;
+}
+
+.profile-photo-wrapper:hover {
+    transform: scale(1.1);
+}
+
+
+
+#about-text-container {
+    animation: 1s ease 0s 1 goUpABit;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#about-text-p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 28px;
+    text-align: justify;
+    width: 50%;
+}
+
+#about-me-heading {
+    font-family: 'Saira Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 48px;
+    text-align: justify;
+}
+
+
+
+#page2-exp {
+    background: white;
 }

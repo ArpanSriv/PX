@@ -1,3 +1,5 @@
+//$('#main-slider').slick()
+
 var loadingAnimation = bodymovin.loadAnimation({
     container: document.getElementById('animation-container'),
     path: 'data.json',
@@ -16,6 +18,7 @@ function stateChange(newState) {
             $('#animation-container').fadeOut('slow', function() {
                 $('.logo-container').fadeIn();
 
+                $('.wrapper').css('background', '#212121')
 
                 $('.main-content').fadeIn();
             });
@@ -24,7 +27,7 @@ function stateChange(newState) {
 
 
         }
-    }, 10000);
+    }, 1000);
 }
 
 stateChange(-1)
