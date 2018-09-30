@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Saira+Condensed');
+
+@font-face {
+    font-family: 'National-Regular';
+    src: url('/fonts/National-Regular.eot');
+    src: url('/fonts/National-Regular.woff2') format('woff2'),
+        url('/fonts/National-Regular.woff') format('woff'),
+        url('/fonts/National-Regular.ttf') format('truetype'),
+        url('/fonts/National-Regular.svg#National-Regular') format('svg'),
+        url('/fonts/National-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'National-Regular', sans-serif;
+    font-size: 20px;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+big {
+    font-size: 24px;
+}
+
+p {
+    margin-top: 5px;
+}
+
+.actual-header {
+    width: 100%;
+}
+
+.logo-container {
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    width: 5%;
+    /*    margin: 0 auto;*/
+    /*    display: inline;*/
+    /*    float: none;*/
+}
+
+
+
+
+
+#main-logo {
+    width: 50px;
+}
+
+.logo-container::after {
+    content: 'ScholarJobs';
+    color: white;
+    z-index: 5;
+    height: 100%;
+    position: absolute;
+    top: 15px;
+    font-size: 24px;
+    transform: translateX(-40%);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.logo-container:hover::after,
+.logo-container:focus::after {
+    transform: translateX(0);
+    opacity: 100;
+    transition: all 0.5s ease;
+}
+
+.top-nav {
+    position: absolute;
+    background: #212121;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 20px;
+    padding-left: 2vw;
+    position: relative;
+    text-align: right;
+}
+
+.top-nav a {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+}
+
+.top-nav a:hover {
+    border-bottom: solid;
+    border-bottom-color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.header {}
+
+.wrapper {}
+
+.main {
+/*    width: 100vw;*/
+}
+
+.form-wrapper {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.red {
+    color: red;
+}
+
+.contact-input-field {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #eee;
+    background: transparent;
+    color: #212121;
+}
+
+.contact-input-field:focus {
+    outline: none !important;
+    border-bottom: 2px solid #212121;
+    /*    transform: translateY(-2px);*/
+    transition: all 1s ease;
+}
+
+
+
+
+
+
+.control__indicator {
+    /*	position: absolute;*/
+    /*	top: 2px;*/
+    /*	left: 0;*/
+    width: 20px;
+    height: 20px;
+    background: #e6e6e6;
+}
+
+.control--radio .control__indicator {
+    border-radius: 50%;
+}
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+    background: #ccc;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+    background: #2aa1c0;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+    background: #0e647d;
+}
+
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+    pointer-events: none;
+    opacity: .6;
+    background: #e6e6e6;
+}
+
+/* Check mark */
+.control__indicator:after {
+    /*    position: absolute;*/
+    display: none;
+    content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+    display: block;
+}
+
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+    top: 4px;
+    left: 8px;
+    width: 3px;
+    height: 8px;
+    transform: rotate(45deg);
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b;
+}
+
+/* Radio button inner circle */
+.control--radio .control__indicator:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+/* Disabled circle colour */
+.control--radio input:disabled ~ .control__indicator:after {
+    background: #7b7b7b;
+}
+
+.cbox {
+
+    vertical-align: middle;
+    list-style: none;
+    text-align: left;
+}
+
+.cbox input {
+    margin-right: 10px;
+}
+
+.checkboxes {
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.field-heading {
+    margin-bottom:
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    /*
+    width: 100%;
+    resize: none;
+    overflow: auto;
+    outline: none;
+    bordeer: none;
+    border-bottom: 2px solid #212121;
+    color: #eee;
+*/
+}
+
+
+.submit-buttom {
+    background: white;
+}
+
+button {
+    background: none;
+    box-shadow: none;
+    border: 2px Black solid;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: black;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.heading {
+    letter-spacing: 0;
+    transition: all 0.5s ease;
+}
+
+.heading:hover {
+    letter-spacing: 0.1em;
+    transition: all 0.5s ease;
+
+}
+
+
+.quote-wrapper {
+    padding: 50px;
+}
+
+#quote {
+    font-size: 40px;
+}
+
+#quote-by {
+}
+
+.footer {
+    padding: 50px;
+    background: #212121;
+    text-align: center;
+    color: white;
+}
+
+
+
+.bottom-nav {
+    display: flex;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bottom-nav-item {
+    flex-grow: 0.05;
+}
+
+.bottom-nav-item-link {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 15px;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 2px;
+    transition: all 0.5s ease;
+}
+
+
+.bottom-nav-item-link:hover {
+    text-decoration: none;
+    color: inherit;
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: 2px;
+    transition: all 0.5s ease;
+}
+
+.footer-email-link {
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+.footer-email-link:hover {
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.credits {
+    font-size: 14px;
+}
+
+.top-nav-link {
+    color: white;
+    z-index: 9;
+}

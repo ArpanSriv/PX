@@ -1,104 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="styles.css" />
-        <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-    </head>
-    <body>
-        <input type="checkbox" id="navcheck" role="button" title="menu">
-        <label for="navcheck" aria-hidden="true" title="menu">
-            <span class="burger">
-                <span class="bar">
-                    <span class="visuallyhidden">Menu</span>
-                </span>
-            </span>
-        </label>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
 
-        <nav id="menu">
-            <a href="#">Home</a>
-            <a href="#">Contact Me</a>
-            <a href="#">Hire Me</a>
-            <a href="#">About</a>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="linkstyles.css" />
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js" integrity="sha256-0CPLQz4j6DXUK8fukOncK49Rizpy8xsAMKfsVPbKHF4=" crossorigin="anonymous"></script>
+    <!--    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>-->
+</head>
+
+<body>
+    <div class="header">
+
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
 
-        <div class="header">
 
-            <div class="wrapper">
-                <div class="actual-header">
-                    <div class="logo-container">
-                        <object id="main-logo" data="finallogo.svg" type="image/svg+xml"></object>
-                    </div>
-                </div>
+        <video autoplay muted loop class="cover-video" id="travaho" poster="res/Travaho.jpg">
+            <source src="res/Travaho.mp4" type="video/mp4" id='cover-video-source' />
+            <source src="res/Travaho.ogv" type="video/ogv" id='cover-video-source' />
+            <source src="res/Travaho.webm" type="video/webm" id='cover-video-source' />
+        </video>
 
-                <div id="animation-container"></div>
+        <video autoplay muted loop class="cover-video" id="wanted" poster="res/I_Just_Wanted.jpg">
+            <source src="res/I_Just_Wanted.mp4" type="video/mp4" id='cover-video-source' />
+            <source src="res/I_Just_Wanted.ogv" type="video/ogv" id='cover-video-source' />
+            <source src="res/I_Just_Wanted.webm" type="video/webm" id='cover-video-source' />
+        </video>
 
-                <div class="main-content">
+        <video autoplay muted loop class="cover-video" id="office" poster="res/Muji_Doodle.jpg">
+            <source src="res/Muji_Doodle.mp4" type="video/mp4" id='cover-video-source' />
+            <source src="res/Muji_Doodle.ogv" type="video/ogv" id='cover-video-source' />
+            <source src="res/Muji_Doodle.webm" type="video/webm" id='cover-video-source' />
+        </video>
 
-                    <div id="mainSlider" class="carousel slide" data-ride="carousel">
 
-                        <div class="carousel-inner">
+        <div class="wrapper">
 
-                            <div id="page1-about" class="carousel-item active">
-
-                                <div id="profile-image-container" class="carousel-item">
-
-                                    <figure class='profile-photo-wrapper'>
-                                        <img id='profile-photo' src="images/test_dp.jpg" alt="Picture" />
-
-                                        <figcaption>Mr. Samir Jain <br> Founder of <em>Scholar Jobs</em></figcaption>
-                                    </figure>
-                                </div>
-
-                                <div id="about-text-container">
-
-                                    <h2 id="about-me-heading">About Me</h2>
-
-                                    <p id='about-text-p'>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum turpis id lacinia scelerisque. Pallentesque tellus eros, interdum sit amet tempor et, pellentesque ac velit. Integer at auctor sapien.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                            <div id="page2-hire" class="carousel-item">
-
-                            </div>
-
-                        </div>
-
-                        <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-
-                        <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-
-                    </div>
-                </div>
+            <div class="actual-header">
+                <a href="index.html" class="logo-container">
+                    <object id="main-logo" data="finallogo.svg" type="image/svg+xml"></object>
+                </a>
             </div>
 
+            <div id="animation-container"></div>
 
+            <div class="main-content">
+
+
+                <div id="mainSlider" class="carousel slide carousel-fade">
+
+                    <div class="carousel-inner">
+
+                        <!--  PAGE 1  -->
+                        <div id="page-wrapper" class="carousel-item active">
+
+                            <div id="page-inner">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+
+
+
+                                            <div id="about-text-container">
+
+                                                <p id="carousel-heading"><span class="bold">Scholar</span><span class="thin"><b>Jobs</b></span></p>
+
+                                                <p class='about-text-p'>
+                                                    Work. On Time. On Point.
+                                                </p>
+
+                                                <center style="margin-top: 20px;"><button>CONTACT</button></center>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <!--                         PAGE 2  -->
+                        <div id="page-wrapper" class="carousel-item">
+
+                            <div id="page-inner">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+
+                                            <div id="about-text-container">
+
+                                                <p id="carousel-heading"><span class="bold">What do we offer?</span></p>
+
+                                                <div class='about-text-p' id='typer' style="font-size: 20px;text-transform: none;font-family: 'Roboto', sans-serif;text-align: justify|center">
+                                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+<!--
+                                                    <ul>
+                                                        <li>The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</li>
+                                                        <li> Many desktop publishing packages and web page editors now use Lorem Ipsum.</li>
+                                                        <li>Various versions have evolved over the years, sometimes by accident, sometimes.</li>
+                                                    </ul> 
+-->
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!--                          PAGE 3 -->
+                        <div id="page-wrapper" class="carousel-item">
+
+                            <div id="page-inner">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+
+                                            <div id="about-text-container">
+
+                                                <p id="carousel-heading"><span class="bold">Why Scholar Jobs&trade;?</span></p>
+
+                                                <p class='about-text-p' style="font-size: 20px;text-transform: none;font-family: 'Roboto', sans-serif;text-align: justify|center">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum turpis id lacinia scelerisque.
+                                                </p>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="right-container">
+
+                    <div class="button-wrapper">
+
+                        <a class="special-a next button" href="#mainSlider" role="button" data-slide="next">
+
+                            <object id="forward-svg" data="images/forward.svg" type="image/svg+xml"></object>
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
+    </div>
 
-        <script src="lottie.js" charset="utf-8"></script>
-        <script src="js/jquery-3.3.1.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="app.js" type="text/javascript"></script>
-    </body>
+    <script src="lottie.js" charset="utf-8"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
 </html>

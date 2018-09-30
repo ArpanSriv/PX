@@ -1,2 +1,2 @@
-- Fix the background issue
++ Fix the background issue
 
